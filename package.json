@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",        
     "start-dev": "nodemon -r dotenv/config index.js", 
-    "homepage": "https://henrygoodin.github.io/myportfolio-hg", 
+ "homepage": "https://henrygoodin.github.io/myportfolio-hg",
     "deploy": "gh-pages -d public"
   },
   "author": "henry goodin",
