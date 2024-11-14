@@ -7,7 +7,7 @@
     "start": "node index.js",        
     "start-dev": "nodemon -r dotenv/config index.js", 
  "homepage": "https://henrygoodin.github.io/myportfolio-hg",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d ."
   },
   "author": "henry goodin",
   "license": "MIT",
