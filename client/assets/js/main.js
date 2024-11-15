@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
           // Send data to the backend
-          const response = await fetch("http://localhost:3000/api/contacts/submit", {
+          const response = await fetch("https://hgwebsites-backend.onrender.com/api/contacts/submit", {
               method: "POST",
               headers: {
                   "Content-Type": "application/json"

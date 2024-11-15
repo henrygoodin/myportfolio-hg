@@ -19,6 +19,7 @@ const allowedOrigins = [
     'http://localhost:3000', // If React frontend or backend server running on localhost:3000
     'http://127.0.0.1:5500', // Live Server default
     'http://localhost:5500', // Alternate Live Server default
+    'https://hgwebsites-backend.onrender.com'
 ];
 
 
