@@ -5,8 +5,8 @@ dotenv.config();
 import cors from 'cors';
 import debug from 'debug';
 import { contactRouter } from './contact.js';
-const debugServer = debug('app:Server');
 
+const debugServer = debug('app:Server');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -16,16 +16,15 @@ app.use(express.json());
 app.use(cookieParser());
 
 const allowedOrigins = [
-    'http://localhost:3000', // If React frontend or backend server running on localhost:3000
-    'http://127.0.0.1:5500', // Live Server default
-    'http://localhost:5500', // Alternate Live Server default
-    'https://myportfolio-hg.onrender.com/'
+    'http://localhost:3000',       // Localhost frontend
+    'http://127.0.0.1:5500',       // Live Server default
+    'http://localhost:5500',       // Alternate Live Server default
+    'https://myportfolio-hg.onrender.com' // Render frontend URL without trailing slash
 ];
-
 
 app.use(cors({
     origin: (origin, callback) => {
-        // If origin is not sent (e.g., mobile apps or curl), allow it
+        // Allow requests with no origin (like mobile apps or curl requests)
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
@@ -34,12 +33,11 @@ app.use(cors({
     },
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,  // Allow cookies if needed
+    credentials: true  // Allow cookies if needed
 }));
 
-
-// Handle preflight requests
-app.options('*', cors()); // Handles all OPTIONS requests for preflight checks
+// Handle preflight requests for all routes
+app.options('*', cors());
 
 // Routes
 app.use('/api/contacts/', contactRouter);
