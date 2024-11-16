@@ -1,0 +1,45 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .fst-italic {
+    color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+  }
+
+  .content {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0 0 10px 30px;
+        position: relative;
+      }
+
+      i {
+        position: absolute;
+        font-size: 20px;
+        left: 0;
+        top: -3px;
+        color: var(--accent-color);
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .pulsating-play-btn {
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+  }
+}
