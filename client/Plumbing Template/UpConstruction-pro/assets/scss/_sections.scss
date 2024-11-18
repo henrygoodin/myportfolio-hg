@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 92px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 76px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 50px;
+      height: 2px;
+      background: var(--accent-color);
+      display: inline-block;
+    }
+
+    &:before {
+      margin: 0 15px 10px 0;
+    }
+
+    &:after {
+      margin: 0 0 10px 15px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import './sections/_hero.scss';
+@import './sections/_get-started.scss';
+@import './sections/_constructions.scss';
+@import './sections/_services.scss';
+@import './sections/_alt-services.scss';
+@import './sections/_features.scss';
+@import './sections/_projects.scss';
+@import './sections/_testimonials.scss';
+@import './sections/_recent-blog-posts.scss';
+@import './sections/_about.scss';
+@import './sections/_stats-counter.scss';
+@import './sections/_alt-services-2.scss';
+@import './sections/_team.scss';
+@import './sections/_features-cards.scss';
+@import './sections/_service-details.scss';
+@import './sections/_project-details.scss';
+@import './sections/_blog-posts.scss';
+@import './sections/_blog-pagination.scss';
+@import './sections/_blog-details.scss';
+@import './sections/_blog-author.scss';
+@import './sections/_blog-comments.scss';
+@import './sections/_comment-form.scss';
+@import './sections/_contact.scss';
+@import './sections/_starter-section.scss';

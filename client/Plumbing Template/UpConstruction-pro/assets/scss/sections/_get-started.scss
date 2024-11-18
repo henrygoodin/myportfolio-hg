@@ -1,0 +1,87 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Get Started Section
+--------------------------------------------------------------*/
+.get-started {
+  .content {
+    padding: 30px 0;
+
+    h3 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: var(--accent-color);
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .php-email-form {
+    background: color-mix(in srgb, var(--default-color), transparent 97%);
+    padding: 30px;
+    height: 100%;
+
+    @media (max-width: 575px) {
+      padding: 20px;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      font-size: 14px;
+      padding: 10px 15px;
+      box-shadow: none;
+      border-radius: 0;
+      color: var(--default-color);
+      background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+      border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+
+      &:focus {
+        border-color: var(--accent-color);
+      }
+
+      &::placeholder {
+        color: color-mix(in srgb, var(--default-color), transparent 70%);
+      }
+    }
+
+    button[type="submit"] {
+      color: var(--contrast-color);
+      background: var(--accent-color);
+      border: 0;
+      padding: 10px 30px;
+      transition: 0.4s;
+      border-radius: 4px;
+
+      &:hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 20%);
+      }
+    }
+  }
+}

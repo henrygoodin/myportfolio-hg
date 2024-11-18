@@ -1,0 +1,83 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services {
+  .service-item {
+    background-color: var(--surface-color);
+    padding: 40px;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      position: relative;
+      margin-bottom: 50px;
+
+      i {
+        color: var(--heading-color);
+        font-size: 56px;
+        transition: ease-in-out 0.3s;
+        z-index: 2;
+        position: relative;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: color-mix(in srgb, var(--heading-color), transparent 95%);
+        border-radius: 50px;
+        z-index: 1;
+        top: 10px;
+        right: -20px;
+        transition: 0.3s;
+      }
+    }
+
+    h3 {
+      color: color-mix(in srgb, var(--heading-color), transparent 20%);
+      font-weight: 700;
+      margin: 0 0 20px 0;
+      padding-bottom: 8px;
+      font-size: 22px;
+      position: relative;
+      display: inline-block;
+      border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
+      transition: 0.3s;
+    }
+
+    p {
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .readmore {
+      margin-top: 15px;
+      display: inline-block;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+
+    &:hover {
+      .icon i {
+        color: var(--heading-color);
+      }
+
+      .icon:before {
+        background: var(--accent-color);
+      }
+
+      h3 {
+        border-color: var(--accent-color);
+        color: var(--heading-color);
+      }
+
+      .readmore {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
