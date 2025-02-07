@@ -5,28 +5,39 @@ dotenv.config();
 import cors from 'cors';
 import debug from 'debug';
 const debugServer = debug('app:Server');
-import {
-    contactRouter
-} from './routes/contact.js';
+import { contactRouter } from './routes/contact.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware
-app.use(express.urlencoded({
-    extended: true
-}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('frontend/dist'));
-app.use(cors()); //Enables Cors for all origins
 
-app.use('*', cors()); //handles all OPTIONS request for preflight checks
+// ✅ Define allowed origins
+const allowedOrigins = ['http://127.0.0.1:5500']; // Your frontend's URL
 
+// ✅ Correct CORS configuration
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: ['GET', 'POST', 'OPTIONS'], // Allow preflight OPTIONS request
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true, // Allow cookies if needed
+}));
 
-//Routes
-app.use('/api/contacts', contactRouter);
+// ✅ Handle preflight OPTIONS requests
+app.options('*', cors());
 
+// Routes
+app.use('/api/contacts/', contactRouter);
 
 // Start server
 app.listen(port, () => {
@@ -35,9 +46,7 @@ app.listen(port, () => {
 
 // Global error handler
 app.use((err, req, res, next) => {
-    const status = err.status || 500; // Default to 500 if status is not set
-    res.status(status).json({
-        error: err.message
-    });
-    debugServer(`Error occurred: ${err.message}`, err); // Log the entire error object
+    const status = err.status || 500;
+    res.status(status).json({ error: err.message });
+    debugServer(`Error occurred: ${err.message}`, err);
 });

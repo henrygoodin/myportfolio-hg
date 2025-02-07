@@ -87,17 +87,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
 .php-email-form .sent-message {
   display: none;
@@ -152,6 +141,7 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  position: fixed;
 }
 
 
@@ -747,6 +737,7 @@ section,
   color: var(--accent-color);
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1108,7 +1099,12 @@ section,
   padding: 60px 0; /* Maintain spacing consistency */
 }
 
-.markets h2, .leadership h2 {
+.markets h2 {
+  color: white; /* Accent color for section titles */
+  text-align: center;
+}
+
+.leadership h2 {
   color: white; /* Accent color for section titles */
   text-align: center;
 }
@@ -1198,7 +1194,6 @@ section,
 .leadership .leadership-info {
   padding: 15px;
   text-align: center;
-  background: #333; /* Slightly lighter than the section */
   border-radius: 0 0 10px 10px;
 }
 
@@ -1206,14 +1201,14 @@ section,
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #fff;
+  color: black;
 }
 
 .leadership .leadership-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
-  color: #ddd;
+  color: black;
 }
 
 
@@ -1277,15 +1272,6 @@ section,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -1996,9 +1982,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Widgets

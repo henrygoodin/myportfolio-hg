@@ -210,4 +210,78 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+
+
+  /*Contact Form Code */
+  document.getElementById('contactForm').addEventListener('submit', async function (event) {
+    event.preventDefault(); //Prevent default form submission behavior
+
+    //Disable the submit button to prevent multiple submissions
+    const submitButton = event.target.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    document.querySelector('.loading').style.display = "block"; //Show loadiung spinner
+
+
+    //Get form data
+    const formData = new FormData(event.target);
+    const data = {};
+
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    //Clear any previous success or error messages
+    document.querySelector('.sent-message').style.display = "none";
+
+    try {
+      //Send form data to the server via Post request
+      const response = await fetch('http://localhost:3000/api/contacts/submit', {
+
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        //If the message was saved successfully, show the success message
+        document.querySelector('.sent-message').style.display = "block";
+
+        //Clear the form inputs after a successful submission
+        document.getElementById('contactForm').reset(); //Resets all form fields
+      } else {
+        // In case of error (though you may not use the error div anymore, you can handle it here if needed)
+        console.error(result.error || 'Something went wrong.');
+        document.querySelector('.error-message').style.display = 'none';
+
+      }
+
+    } catch (error) {
+      // Show error message for network issues (you can log it, but don't display an error div)
+      console.error('Network error:', error);
+      document.querySelector('.error-message').style.display = 'none';
+    } finally {
+      // Enable the submit button again
+      submitButton.disabled = false;
+      document.querySelector('.loading').style.display = 'none'; // Hide loading spinner
+    }
+
+  });
+
+
+  //  Clear Button Functionality
+document.getElementById('clearForm').addEventListener('click', function () {
+  const form = document.getElementById('contactForm');
+  form.reset(); // Clear all inputs
+
+  // Hide all messages
+  document.querySelector('.sent-message').style.display = "none";
+  document.querySelector('.error-message').style.display = "none";
+  document.querySelector('.loading').style.display = "none";
+});
+
 })();
