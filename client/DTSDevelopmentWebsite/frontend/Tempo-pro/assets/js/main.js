@@ -273,6 +273,51 @@
   });
 
 
+  //Careers Form
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("careers-form");
+    const formStatus = document.getElementById("form-status");
+  
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      
+      const formData = new FormData(form);
+      const resumeFile = formData.get("resume");
+  
+      if (resumeFile && resumeFile.type !== "application/pdf") {
+        formStatus.textContent = "Please upload a PDF file.";
+        formStatus.style.color = "red";
+        return;
+      }
+  
+      try {
+        //Send form data to the server via Post request
+      const response = await fetch('http://localhost:3000/api/careers/submit', {
+
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      });
+
+  
+        if (response.ok) {
+          formStatus.textContent = "Application submitted successfully!";
+          formStatus.style.color = "green";
+          form.reset();
+        } else {
+          throw new Error("Submission failed.");
+        }
+      } catch (error) {
+        formStatus.textContent = "An error occurred. Please try again.";
+        formStatus.style.color = "red";
+      }
+    });
+  });
+  
+
+
   //  Clear Button Functionality
 document.getElementById('clearForm').addEventListener('click', function () {
   const form = document.getElementById('contactForm');

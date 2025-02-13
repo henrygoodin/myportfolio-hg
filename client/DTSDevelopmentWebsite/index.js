@@ -6,6 +6,7 @@ import cors from 'cors';
 import debug from 'debug';
 const debugServer = debug('app:Server');
 import { contactRouter } from './routes/contact.js';
+import { careersRouter } from './routes/careers.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -38,6 +39,7 @@ app.options('*', cors());
 
 // Routes
 app.use('/api/contacts/', contactRouter);
+app.use('/api/careers/', careersRouter);
 
 // Start server
 app.listen(port, () => {

@@ -45,10 +45,20 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+
+          <li class="dropdown">
+            <a href="#"><span>About Us</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#about">About DTS Development</a></li>
+              <li><a href="#services">Services Offered</a></li>
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </li>
+
           <li><a href="#markets">Markets</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#leadership">Leadership</a></li>
+
+
           <li class="dropdown">
             <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -70,14 +80,14 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <!--Logo Image-->
+      <!--Home Page Image-->
       <img src="assets/img/HomePage.jpg" alt="" data-aos="fade-in">
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <p class="display-1">Where <span class="text-danger">Luxury </span>Meets <span
-                class="text-danger">Your</span> Lifestyle.</p>
+                class="text-danger"> Lifestyle.</span></p>
             <a href="#about" class="btn-get-started">Learn More</a>
           </div>
         </div>
@@ -219,127 +229,129 @@
     <!-- Services Section -->
     <section id="services" class="services section">
 
+   <!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Services Offered</h2>
+  <p>What We <span class="description-title">Offer</span></p>
+</div><!-- End Section Title -->
+
+<div class="container">
+  <div class="row gy-5 align-items-center">
+
+    <!-- Image Column -->
+    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+      <img src="assets/img/Services.jpg" class="img-fluid rounded" alt="DTS Developments Services">
+    </div>
+
+    <!-- Content Column -->
+    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+      <h3>Comprehensive Development Solutions</h3>
+      <p>
+        At DTS Developments LLC, we specialize in providing top-tier real estate and investment solutions.
+        From initial land acquisition to full-scale project execution, our expertise ensures high-value returns
+        and long-term growth.
+      </p>
+
+      <div class="row gy-4">
+        <div class="col-md-6 icon-box">
+          <i class="bi bi-bricks text-danger"></i>
+          <h4>Land Acquisition & Development</h4>
+          <p>Identifying and acquiring prime land for residential, commercial, and mixed-use projects.</p>
+        </div>
+
+        <div class="col-md-6 icon-box">
+          <i class="bi bi-bar-chart text-danger"></i>
+          <h4>Investment Strategy</h4>
+          <p>Providing expert investment planning to maximize ROI in high-potential markets.</p>
+        </div>
+
+        <div class="col-md-6 icon-box">
+          <i class="bi bi-building-check text-danger"></i>
+          <h4>Project Management</h4>
+          <p>End-to-end project execution from planning to construction and market launch.</p>
+        </div>
+
+        <div class="col-md-6 icon-box">
+          <i class="bi bi-diagram-3 text-danger"></i>
+          <h4>Program Management</h4>
+          <p>Coordinating multiple projects to align with strategic goals, ensuring efficiency and success.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section><!-- /Services Section -->
+
+
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership section text-center">
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>What We <span class="description-title">Offer</span></p>
+        <h2 class="text-white">Leadership</h2>
+        <p><span>Meet Our</span> <span class="description-title">Leadership Team</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="row gy-5 align-items-center">
+        <div class="row gy-4 justify-content-center">
+          <!-- Centering the leadership cards -->
 
-          <!-- Image Column -->
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/shutterstock_2461064843.jpg" class="img-fluid rounded" alt="DTS Developments Services">
-          </div>
-
-          <!-- Content Column -->
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <h3>Comprehensive Development Solutions</h3>
-            <p>
-              At DTS Developments LLC, we specialize in providing top-tier real estate and investment solutions.
-              From initial land acquisition to full-scale project execution, our expertise ensures high-value returns
-              and sustainable growth.
-            </p>
-
-            <div class="row gy-4">
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-bricks text-danger"></i>
-                <h4>Land Acquisition & Development</h4>
-                <p>Identifying and acquiring prime land for residential, commercial, and mixed-use projects.</p>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="leadership">
+              <div class="leadership-img">
+                <img src="assets/img/leadershipPhoto-1.jpg" class="img-fluid" alt="Donta Sharpe">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
               </div>
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-bar-chart text-danger"></i>
-                <h4>Investment Strategy</h4>
-                <p>Providing expert investment planning to maximize ROI in high-potential markets.</p>
-              </div>
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-building-check text-danger"></i>
-                <h4>Project Management</h4>
-                <p>End-to-end project execution from planning to construction and market launch.</p>
-              </div>
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-globe text-danger"></i>
-                <h4>Sustainable Development</h4>
-                <p>Integrating eco-friendly and smart infrastructure solutions for future-proof investments.</p>
+              <div class="leadership-info">
+                <h4>Donta Sharpe</h4>
+                <span>CEO</span>
               </div>
             </div>
-          </div>
+          </div><!-- End Leadership Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="leadership">
+              <div class="leadership-img">
+                <img src="assets/img/Leadership2.JPG" class="img-fluid" alt="Zekita Armstrong">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="leadership-info">
+                <h4>Zekita Armstrong</h4>
+                <span>Strategic Partner</span>
+              </div>
+            </div>
+          </div><!-- End Leadership Member -->
 
         </div>
       </div>
 
-    </section><!-- /Services Section -->
-
-
-   <!-- Leadership Section -->
-<section id="leadership" class="leadership section text-center">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2 class="text-white">Leadership</h2>
-    <p><span>Meet Our</span> <span class="description-title">Leadership Team</span></p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-    <div class="row gy-4 justify-content-center"> <!-- Centering the leadership cards -->
-
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <div class="leadership">
-          <div class="leadership-img">
-            <img src="assets/img/leadershipPhoto-1.jpg" class="img-fluid" alt="Donta Sharpe">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="leadership-info">
-            <h4>Donta Sharpe</h4>
-            <span>CEO</span>
-          </div>
-        </div>
-      </div><!-- End Leadership Member -->
-
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="leadership">
-          <div class="leadership-img">
-            <img src="assets/img/Leadership2.JPG" class="img-fluid" alt="Zekita Armstrong">
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="leadership-info">
-            <h4>Zekita Armstrong</h4>
-            <span>Strategic Partner</span>
-          </div>
-        </div>
-      </div><!-- End Leadership Member -->
-
-    </div>
-  </div>
-
-</section><!-- /Leadership Section -->
+    </section><!-- /Leadership Section -->
 
 
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/cta-bg.jpg" alt="">
+      <img src="assets/img/CTA.jpg" alt="">
 
       <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row justify-content-center" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Let's Build Your Vision</h3>
+              <h3>Let's Build The Vision</h3>
               <p>Looking for a trusted partner to bring your development project to life? Whether it's land investment,
                 site planning, or project management, we’re here to help. Contact us today to discuss your goals.</p>
               <a class="cta-btn" href="#contact">Get in Touch</a>
@@ -351,94 +363,94 @@
     </section><!-- /Call To Action Section -->
 
 
-<!-- Contact Section -->
-<section id="contact" class="contact section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p><span>Need Help?</span> <span class="description-title">Contact us<br></span></p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p><span>Connect With Us</span></p>
+      </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-      <!-- Updated Google Maps with Norfolk, VA Location -->
-      <iframe style="border:0; width: 100%; height: 270px;"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3208.172621084689!2d-76.29463392473423!3d36.84771797200361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba982923e0110d%3A0x90d75ff9dfb90f9d!2s999%20Waterside%20Dr%2C%20Norfolk%2C%20VA%2023510%2C%20USA!5e0!3m2!1sen!2sus!4v1707333300000!5m2!1sen!2sus"
-        frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><!-- End Google Maps -->
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <!-- Updated Google Maps with Norfolk, VA Location -->
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3208.172621084689!2d-76.29463392473423!3d36.84771797200361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba982923e0110d%3A0x90d75ff9dfb90f9d!2s999%20Waterside%20Dr%2C%20Norfolk%2C%20VA%2023510%2C%20USA!5e0!3m2!1sen!2sus!4v1707333300000!5m2!1sen!2sus"
+            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
 
-    <div class="row gy-4">
+        <div class="row gy-4">
 
-      <div class="col-lg-4">
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-          <i class="bi bi-geo-alt flex-shrink-0"></i>
-          <div>
-            <h3>Address</h3>
-            <p>999 Waterside Dr.</p>
-            <p>Norfolk, VA 23510, United States</p>
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>999 Waterside Dr.</p>
+                <p>Norfolk, VA 23510, United States</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div class="text-dark">
+                <h3>Call Us</h3>
+                <p><a href="tel:+14437656969" class="text-dark">443-765-6969</a></p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div class="text-dark">
+                <h3>Email Us</h3>
+                <p><a href="mailto:D.sharpe@dtsdevelopments.com" class="text-dark">D.sharpe@dtsdevelopments.com</a></p>
+              </div>
+            </div><!-- End Info Item -->
+
           </div>
-        </div><!-- End Info Item -->
 
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-          <i class="bi bi-telephone flex-shrink-0"></i>
-          <div class="text-dark">
-            <h3>Call Us</h3>
-            <p><a href="tel:+14437656969" class="text-dark">443-765-6969</a></p>
-          </div>
-        </div><!-- End Info Item -->
+          <div class="col-lg-8">
+            <form id="contactForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"
+              novalidate>
+              <div class="row gy-4">
 
-        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-          <i class="bi bi-envelope flex-shrink-0"></i>
-          <div class="text-dark">
-            <h3>Email Us</h3>
-            <p><a href="mailto:D.sharpe@dtsdevelopments.com" class="text-dark">D.sharpe@dtsdevelopments.com</a></p>
-          </div>
-        </div><!-- End Info Item -->
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <button type="button" class="btn btn bg-danger text-white" id="clearForm">Clear</button>
+                  <!-- Clear Button -->
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
 
       </div>
 
-      <div class="col-lg-8">
-        <form id="contactForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"
-          novalidate>
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit" class="btn btn-primary">Send Message</button>
-              <button type="button" class="btn btn bg-danger text-white" id="clearForm">Clear</button>
-              <!-- Clear Button -->
-            </div>
-
-          </div>
-        </form>
-      </div><!-- End Contact Form -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Contact Section -->
+    </section><!-- /Contact Section -->
 
 
   </main>
@@ -464,7 +476,7 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>

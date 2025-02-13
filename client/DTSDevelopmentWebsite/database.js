@@ -63,10 +63,33 @@ async function saveContactMessage(contactMessage) {
     }
   }
 
+  // ✅ Get all Career Applications
+async function getAllApplications() {
+    try {
+        const db = await connect();
+        const applications = await db.collection("CareerApplications").find({}).toArray();
+        return applications;
+    } catch (error) {
+        throw new Error(error.message);
+    }
+}
+
+// ✅ Save a Career Application
+async function saveCareerApplication(application) {
+    try {
+        const db = await connect();
+        const result = await db.collection("CareerApplications").insertOne(application);
+        return result;
+    } catch (error) {
+        throw new Error(error.message);
+    }
+}
 
 export {
     connect,
     ping,
     getAllContacts,
-    saveContactMessage
+    saveContactMessage,
+    getAllApplications, // New Function
+    saveCareerApplication // New Function
 };

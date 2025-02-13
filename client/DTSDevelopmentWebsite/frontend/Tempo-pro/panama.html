@@ -1,76 +1,192 @@
-<!-- Panama Portfolio Page -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panama - Portfolio</title>
-    <!-- Favicons -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Panama - DTS Developments</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
+
 <body>
-
-    
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/DTSLogo.png" alt="DTS Development Logo">
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#markets">Markets</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#markets">Markets</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#leadership">Leadership</a></li>
           <li class="dropdown">
-            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="#" class="active"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="united-states.html">United States</a></li>
               <li><a href="dominican-republic.html">Dominican Republic</a></li>
-              <li><a href="panama.html">Panama</a></li>
+              <li><a class="active" href="panama.html">Panama</a></li>
             </ul>
-          </li>          
-          <li><a href="#contact">Contact</a></li>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
-    <section class="hero">
-        <h1>Innovating Growth in Latin America’s Economic Hub</h1>
+
+  <main class="main">
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/Panama.jpg" alt="Panama Development">
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="display-1">
+              Panama Developments - <span class="text-danger">Discover Our Key Projects</span>
+            </p>
+            <a href="#about" class="btn-get-started">Learn More</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="content">
-        <h2>About Our Developments in Panama</h2>
-        <p>We focus on commercial hubs, high-rises, and infrastructure projects.</p>
-        <h2>Featured Projects</h2>
-        <p>Showcase of commercial and residential projects...</p>
-        <h2>Why Panama?</h2>
-        <p>Tax incentives, foreign investment opportunities...</p>
-    </section>
+
+    <div class="container">
+      <div class="row gy-5">
+        <div class="content col-xl-7 d-flex flex-column">
+          <h3>Strategic Projects in Panama</h3>
+          <p>At DTS Developments LLC, we are expanding into Panama with innovative residential and commercial projects. Our mission is to contribute to the region’s rapid growth and infrastructure development.</p>
+          <a href="#" class="about-btn align-self-center align-self-xl-start">
+            <span>Learn More</span> <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+
+        <div class="col-xl-12">
+          <div class="row gy-4">
+            <div class="col-md-4 icon-box position-relative">
+              <i class="bi bi-globe text-danger"></i>
+              <h4><a href="#" class="stretched-link">Panama City</a></h4>
+              <p>A thriving international business hub with modern infrastructure and real estate opportunities.</p>
+            </div>
+            <div class="col-md-4 icon-box position-relative">
+              <i class="bi bi-house text-danger"></i>
+              <h4><a href="#" class="stretched-link">Beachfront Developments</a></h4>
+              <p>Luxury residential and tourism-focused projects along Panama’s stunning coastline.</p>
+            </div>
+            <div class="col-md-4 icon-box position-relative">
+              <i class="bi bi-bar-chart text-danger"></i>
+              <h4><a href="#" class="stretched-link">Economic Zones</a></h4>
+              <p>Strategic investments in Panama’s growing economic and trade zones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Footer Section-->
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/DTSLogo.png" width="100px;" height="600px" alt="DTS Developments LLC Logo" />
+          </a>
+          <p>DTS Developments LLC is a premier land investment and development company specializing in strategic
+            acquisitions, property management, and real estate solutions. Our expertise drives growth and value in every
+            project we undertake.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Expertise</h4>
+          <ul>
+            <li><a href="#">Land Acquisition</a></li>
+            <li><a href="#">Real Estate Development</a></li>
+            <li><a href="#">Investment Strategies</a></li>
+            <li><a href="#">Property Management</a></li>
+            <li><a href="#">Market Analysis</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p><strong>Norfolk, VA (USA)</strong></p>
+          <p>999 Waterside Dr.</p>
+          <p>Norfolk, VA 23510, United States</p>
+
+          <p class="mt-3"><strong>Panama City, Panama</strong></p>
+          <p>F&F Tower, Calle 50 & 56</p>
+          <p>Bancaria, Panama City, Panama</p>
+
+          <p class="mt-3"><strong>Punta Cana, Dominican Republic</strong></p>
+          <p>Boulevard 1st of November</p>
+          <p>Centur Building, Local 201-A</p>
+          <p>Punta Cana 23000, Dominican Republic</p>
+
+          <p class="mt-4"><strong>Phone:</strong>
+            <a href="tel:+14437656969" class="text-danger">443-765-6969</a>
+          </p>
+          <p><strong>Email:</strong>
+            <a href="mailto:D.sharpe@dtsdevelopments.com" class="text-danger">D.sharpe@dtsdevelopments.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-4">
+      <p>© <span>2025</span> <strong class="px-1">DTS Developments LLC</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
