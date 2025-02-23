@@ -42,6 +42,7 @@ const careerFormSchema = Joi.object({
 router.get('/', async (req, res) => {
     try {
         const applications = await getAllApplications();
+        debugCareers(applications);
         res.status(200).json(applications);
     } catch (error) {
         debugCareers(error.message);

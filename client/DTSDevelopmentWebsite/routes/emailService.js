@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 export const sendEmail = async (to, subject, text) => {
     try {
         const mailOptions = {
-            from: `"FlashMovers" <${process.env.GMAIL_USER}>`, // sender address
+            from: `"DTS Development LLC" <${process.env.GMAIL_USER}>`, // sender address
             to,                                                // list of receivers
             subject,                                           // Subject line
             text                                               // plain text body
