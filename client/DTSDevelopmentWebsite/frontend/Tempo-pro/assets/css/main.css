@@ -66,6 +66,10 @@ body {
   font-family: var(--default-font);
 }
 
+#career-body{
+  background-color: black !important;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -1084,12 +1088,16 @@ section,
 }
 
 .leadership .leadership-img {
+  background-color: white; /* Ensures all image containers have a white background */
+  padding: 0;
+  margin: 0;
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
 
 .leadership .leadership-img img {
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;

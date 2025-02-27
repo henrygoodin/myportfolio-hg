@@ -82,7 +82,7 @@ router.post('/submit', validBody(contactFormSchema), async (req, res) => {
         );
 
         // Send email to the CEO (notification)
-        const ownerEmail = "D.sharpe@dtsdevelopments.com"; // Replace with the actual CEO's email
+        const ownerEmail = "Info@dtsdevelopments.com";
         await sendEmail(
             ownerEmail,
             'New Message Alert - DTS Development Website',

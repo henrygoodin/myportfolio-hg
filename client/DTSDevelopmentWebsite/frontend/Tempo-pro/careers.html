@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Tempo Bootstrap Template</title>
+  <title>Careers - DTS Development</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -30,9 +31,11 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  
 </head>
 
-<body>
+<body id="career-body">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -43,10 +46,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="index.html#hero">Home</a></li>
 
           <li class="dropdown">
-            <a href="#"><span>About Us</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="index.html#about" class="active"><span>About Us</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="index.html#about">About DTS Development</a></li>
               <li><a href="index.html#services">Services Offered</a></li>
@@ -55,11 +58,11 @@
             </ul>
           </li>
 
-          <li><a href="#markets">Markets</a></li>
+          <li><a href="index.html#markets">Markets</a></li>
 
 
           <li class="dropdown">
-            <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <a href="united-states.html"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="united-states.html">United States</a></li>
               <li><a href="dominican-republic.html">Dominican Republic</a></li>
@@ -75,46 +78,136 @@
     </div>
   </header>
 
+  <!--background: linear-gradient(to top, black, grey, white);-->
+  <section id="hero" class="hero section dark-background"  data-aos-once="false"  data-aos="fade-up">
+    <img src='assets/img/career.jpg' alt="Career Form Page">
+    <div class="container text-center" data-aos="fade-up" data-aos-delay="100" data-aos-once="false">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center text-light mb-4">Apply for a Career</h2>
+          <p class="text-center text-light">Join our team by submitting your application below.</p>
 
-    <section class="career-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h2 class="text-center mb-4">Apply for a Career</h2>
-                    <p class="text-center">Join our team by submitting your application below.</p>
-
-                    <form id="careersForm" method="post" class="p-4 shadow rounded bg-white php-email-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about yourself" required></textarea>
-                        </div>
-                      
-                        <div class="mb-3">
-                            <label for="resume" class="form-label">Upload Resume</label>
-                            <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-                            <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX</small>
-                        </div> 
-
-                        <!-- Feedback message -->
-                        <p id="form-status" class="text-center mt-3"></p>
-
-                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
-                    </form>
-                </div>
+          <form id="careersForm" method="post" class="p-4 shadow rounded bg-white php-email-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
             </div>
-        </div>
-    </section>
 
-<script src="assets/js/careers.js" defer></script>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about yourself"
+                required></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="resume" class="form-label">Upload Resume</label>
+              <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+              <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX</small>
+            </div>
+
+            <!-- Feedback message -->
+            <p id="form-status" class="text-center mt-3"></p>
+
+            <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!--Footer Section-->
+<footer id="footer" class="footer dark-background">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/DTSLogo.png" width="100px" alt="DTS Developments LLC Logo" />
+        </a>
+        <p>DTS Development LLC is a premier land investment and development company specializing in strategic
+          acquisitions, property management, and real estate solutions. Our expertise drives growth and value in every
+          project we undertake.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Expertise</h4>
+        <ul>
+          <li><a href="#">Land Acquisition</a></li>
+          <li><a href="#">Real Estate Development</a></li>
+          <li><a href="#">Investment Strategies</a></li>
+          <li><a href="#">Property Management</a></li>
+          <li><a href="#">Market Analysis</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p><strong>Norfolk, VA (USA)</strong></p>
+        <p>999 Waterside Dr.</p>
+        <p>Norfolk, VA 23510, United States</p>
+
+        <p class="mt-3"><strong>Central Pacific Coast, Costa Rica</strong></p>
+        <p class="mt-3"><strong>Liberia, Costa Rica</strong></p>
+
+        <p class="mt-3"><strong>Punta Cana, Dominican Republic</strong></p>
+        <p>Boulevard 1st of November</p>
+        <p>Centur Building, Local 201-A</p>
+        <p>Punta Cana 23000, Dominican Republic</p>
+
+        <p class="mt-4"><strong>Phone:</strong>
+          <a href="tel:+14437656969" class="text-danger">443-765-6969</a>
+        </p>
+        <p><strong>Email:</strong>
+          <a href="mailto:Info@dtsdevelopments.com" class="text-danger">Info@dtsdevelopments.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center mt-4">
+    <p>© <span>2025</span> <strong class="px-1">DTS Development LLC</strong> <span>All Rights Reserved</span></p>
+  </div>
+</footer>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/careers.js" defer></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -90,7 +90,7 @@ router.post('/submit', upload.single('resume'), validBody(careerFormSchema), asy
         );
 
         // Notify CEO about the new application
-        const ownerEmail = "D.sharpe@dtsdevelopments.com";
+        const ownerEmail = "Info@dtsdevelopments.com";
         await sendEmail(
             ownerEmail,
             'New Job Application Received - DTS Development',
