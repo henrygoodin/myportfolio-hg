@@ -1,0 +1,44 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features {
+  padding-top: 0;
+
+  .features-item {
+    background-color: var(--surface-color);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    position: relative;
+
+    i {
+      font-size: 32px;
+      padding-right: 10px;
+      line-height: 0;
+    }
+
+    h3 {
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-size: 16px;
+
+      a {
+        color: var(--heading-color);
+        transition: 0.3s;
+      }
+    }
+
+    &:hover {
+      border-color: var(--accent-color);
+
+      h3 a {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
